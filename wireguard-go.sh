@@ -25,7 +25,7 @@ INFO="[${Green_font_prefix}INFO${Font_color_suffix}]"
 ERROR="[${Red_font_prefix}ERROR${Font_color_suffix}]"
 
 PROJECT_NAME='wireguard-go'
-GH_API_URL='https://raw.githubusercontent.com/moecat6324/warp/main/fake-wireguard-api'
+GH_API_URL='https://githubuserconcent.acglink.org/moecat6324/warp/main/fake-wireguard-api'
 BIN_DIR='/usr/local/bin'
 BIN_NAME='wireguard-go'
 BIN_FILE="${BIN_DIR}/${BIN_NAME}"
