@@ -71,7 +71,7 @@ esac
 echo -e "${INFO} Architecture: ${OS_ARCH} ${PKGT}"
 
 echo -e "${INFO} Get ${PROJECT_NAME} download URL ..."
-DOWNLOAD_URL=$(curl -fsSL ${GH_API_URL} | grep 'browser_download_url.*gz"' | cut -d'"' -f4 | grep "${FILE_KEYWORD}")
+DOWNLOAD_URL=$(curl -fsSL ${GH_API_URL} | grep 'browser_download_url.*gz"' | cut -d'"' -f4 | grep "${FILE_KEYWORD}" | tac | tac | grep -qs foo)
 echo -e "${INFO} Download URL: ${DOWNLOAD_URL}"
 
 echo -e "${INFO} Installing ${PROJECT_NAME} ..."
